@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void Solve() {
+  int n;
+  scanf("%d", &n);
+
+  for(int i = 1; i <= n; i++) {
+
+    if (n - i > 1) {
+      for(int j = 1; j <= n - i; j++) printf("%d ", j);
+      printf("\n");
+    }
+
+    for(int j = n - i; j <= n; j++) printf("%d ", j);
+    printf("\n");
+
+  }
+}
+
+int main() {
+  Solve();
+  return 0;
+}
